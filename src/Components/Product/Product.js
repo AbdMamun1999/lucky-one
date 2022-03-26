@@ -3,7 +3,7 @@ import './Product.css'
 import {BsFillCartFill} from 'react-icons/bs';
 
 const Product = ({addToCart,product}) => {
-    const {id,image,price,name} = product
+    const {image,price,name} = product
     return (
         <div className='product'>
             <img src={image} alt="" />

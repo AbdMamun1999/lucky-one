@@ -14,7 +14,7 @@ const Products = () => {
 
     const addToCart = (product) =>{
         const newCart = [...cart,product]
-        setCart(newCart)
+        setCart(newCart.slice(0,4))
        
     }
    
