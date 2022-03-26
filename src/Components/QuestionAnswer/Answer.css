@@ -8,3 +8,8 @@
 .answer>*{
     flex: 1;
 }
+@media screen and (max-width:576px) {
+    .answer{
+        flex-direction: column;
+    }
+}
