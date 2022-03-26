@@ -1,0 +1,39 @@
+.product{
+    border: 1px solid gray;
+    margin: auto;
+    border-radius: 7px;
+    width: 260px;
+    height: 350px;
+    position: relative;
+}
+.product img{
+    padding: 7px;
+    border-radius: 10px;
+    width: 250px;
+}
+.product div{
+    margin-left: 4px;
+}
+.product-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.product p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.product button{
+    display: block;
+    padding: 8px 5px; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 7px 7px;
+    border: none;
+    transition: 0.3s;
+}
+.product button:hover{
+    background-color: #e67e22;
+}
