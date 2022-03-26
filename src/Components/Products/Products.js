@@ -22,7 +22,6 @@ const Products = () => {
         const newCart = [...cart]
         for(let i = newCart.length-1; i > 0; i--){
             let randomCart = Math.floor(Math.random()*(i+1))
-            console.log(i+1)
             let temp = newCart[randomCart]
             newCart[randomCart] = newCart[i]
             newCart[i] = temp
@@ -30,7 +29,10 @@ const Products = () => {
 
         setCart(newCart.slice(-1)); 
     }
-    console.log(cart)
+
+    const chooseAgain = () =>{
+        setCart([])
+    }
 
     return (
         <div  className='container'>
@@ -55,7 +57,7 @@ const Products = () => {
                     <button className='chooseBtn' onClick={()=>chooleOneForMe(cart)}>
                         Choose 1 for me
                     </button>
-                    <button className='chooseBtn'>Choose again</button>
+                    <button className='chooseBtn' onClick={()=>chooseAgain()}>Choose again</button>
                 </div>
             </div>
         </div>
