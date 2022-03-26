@@ -34,6 +34,12 @@ const Products = () => {
         setCart([])
     }
 
+    const deleteFromCart = (id) =>{
+        const product = [...cart]
+        const selectedProduct = product.filter(product => product.id !== id)
+        setCart(selectedProduct)
+    }
+
     return (
         <div  className='container'>
             <div className='products-container'>
@@ -51,6 +57,7 @@ const Products = () => {
                     cart.map(product => <Cart
                         key={product.id}
                         product={product}
+                        deleteFromCart={deleteFromCart}
                     ></Cart>)
                 }
                 <div className='btn-div'>
