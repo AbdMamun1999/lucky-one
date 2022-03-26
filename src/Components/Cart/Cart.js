@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css'
+import {AiFillDelete} from 'react-icons/ai'
 
 const Cart = ({product}) => {
     const {image,name} = product
@@ -8,7 +9,9 @@ const Cart = ({product}) => {
             <div className="cart-item">
                 <div><img src={image} alt="" /></div>
                 <h4>{name}</h4>
-                <button>closed</button>
+                <button>
+                    <AiFillDelete size={18}></AiFillDelete>
+                </button>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
-.container-fulid{
-    background-color: #dfe6e9;
-}
+
 .container{
+    width: 95%;
+    margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
     position: relative;
@@ -18,4 +18,15 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 7px 0;
+}
+.btn-div{
+    text-align: center;
+}
+.chooseBtn{
+    color: #222f3e;
+    margin:10px auto;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 3px;
+    display: block;
 }

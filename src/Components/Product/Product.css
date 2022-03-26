@@ -15,14 +15,18 @@
     margin-left: 4px;
 }
 .product-name{
+    color: #222f3e;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .product p{
+    color: #222f3e;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .product button{
+    font-size: 18px;
+    color: #222f3e;
     display: block;
     padding: 8px 5px; 
     position: absolute;
@@ -36,4 +40,7 @@
 }
 .product button:hover{
     background-color: #e67e22;
+}
+.cart-icon{
+    font-size: 1rem;
 }
